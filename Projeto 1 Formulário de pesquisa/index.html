@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+  <html lang="pt-BR">
+    <head>
+      <title>Formulário de Pesquisa</title>
+      <meta charset="utf-8">
+     <link rel="stylesheet" href="styles.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+      </head>
+      <body>
+        <h1 id="title">Formulário de Pesquisa de Leitura</h1>
+        <p id="description">Nos ajude a entender melhor os seus hábitos de leitura</p>
+        <form id="survey-form">
+          <fieldset>
+            <legend>Informações pessoais</legend>
+          <label for="name" id="name-label">Nome:<input type="text" id="name" placeholder="João Oliveira da Silva" required></label>
+          <label for="email" id="email-label">E-mail:<input type="email" id="email" placeholder="joaooliveira2007@gmail.com" required></label>
+          <label for="number" id="number-label">Idade:<input type="number" min="9" max="120" id="number" placeholder="11" required></label>
+          </fieldset>
+          <fieldset>
+            <legend>Perguntas a responder</legend>
+            <p class="perguntas">Com que frequência você lê?
+            <select id="dropdown">
+              <option value="">(selecione um)</option>
+              <option value="1">Todos os dias</option>
+              <option value="2">Algumas vezes na semana</option>
+              <option value="3">Uma vez na semana</option>
+              <option value="4">Nenhuma vez na semana</option>
+              </select><br>
+            </p>
+            <p class="perguntas">Você prefere livro físico ou digital?</p><label for="digital"><input type="radio" id="digital" value="digital" name="tipo-de-livro" checked>Digital</label><label for="fisico"><input type="radio" id="fisico" value="fisico" name="tipo-de-livro">Físico</label><label for="ambos"><input type="radio" id="ambos" value="ambos" name="tipo-de-livro">Ambos</label>
+            <p class="perguntas">Quais gêneros literários você mais gosta?</p>
+            <label for="acao"><input type="checkbox" id="acao" value="acao" name="genero" checked>Ação</label>
+            <label for="romance"><input type="checkbox" id="romance" value="romance" name="genero">Romance</label>
+            <label for="animacao"><input type="checkbox" id="animacao" value="animacao" name="genero">Animação</label>
+            <label for="fantasia"><input type="checkbox" id="fantasia" value="fantasia" name="genero">Fantasia</label>
+            <label for="outro"><input type="checkbox" id="outro" value="outro" name="genero">Outro</label>
+            <label for="recomendacao" class="perguntas">Indique um livro que você gosta:</label>
+            <textarea id="recomendacao" placeholder="Harry Potter: A câmara secreta"></textarea>
+            </fieldset>
+            <input type="submit" id="submit">
+          </form>
+        </body>
