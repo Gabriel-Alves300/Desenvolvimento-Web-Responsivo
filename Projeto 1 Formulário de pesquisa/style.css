@@ -1,0 +1,51 @@
+label, input{
+  display: block;
+}
+
+h1, p{
+  text-align: center;
+}
+
+.perguntas{
+  margin: 8px 0 8px 0
+}
+
+input[type="radio"],input[type="checkbox"]{
+  display: inline;
+}
+
+input[type="submit"]{
+  margin: auto;
+  width: 200px;
+  height: 30px;
+  margin-top: 7px;
+  font-family: "Libre Bodoni", serif;
+  font-size: x-large;
+}
+
+fieldset{
+  border: solid 2px;
+  border-left: none;
+  border-right:none;
+  border-bottom: none
+}
+
+fieldset:last-of-type{
+  border-bottom: solid 2px;
+}
+
+form{
+  width: 70%;
+  margin: auto;
+  background: rgb(255, 218, 158, 75%);
+  font-family: "Libre Bodoni", serif;
+}
+
+body{
+  background: url(https://media.istockphoto.com/id/1957612313/pt/foto/teenage-girl-sitting-on-windowsill-and-reading-a-book.jpg?s=612x612&w=0&k=20&c=UE6VoB3HLybJ3nfpao4py_6Bw2aE7jaZRNEVN9_d1BU=);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  background-attachment: fixed;
+  font-size: x-large;
+}
